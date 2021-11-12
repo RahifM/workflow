@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone
-      run: bash linux.sh
+      run: ls pwd bash linux.sh
 
     - uses: actions/checkout@v2
     - name: Setup tmate session
