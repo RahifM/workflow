@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone
-      run: git clone https://github.com/RahifM/scripts && bash sc*/misc*
+      run: |
+         git clone https://github.com/RahifM/scripts && bash sc*/misc*
+         git clone https://github.com/sabmohmaya/mido -b staging/f2fs-2/lineage-15.1
 
     - uses: actions/checkout@v2
     - name: Setup tmate session
