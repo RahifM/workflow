@@ -4,10 +4,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Clone
+      run: git clone https://github.com/RahifM/scripts && bash sc*/misc*
+
     - uses: actions/checkout@v2
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
-
-    - name: Clone
-      run: git clone https://github.com/RahifM/scripts && bash sc*/misc*
-     
