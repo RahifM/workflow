@@ -6,7 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: git setup
-      run: ./linux.sh
+      run: sh ./linux.sh
     #  run: git clone https://github.com/RahifM/scripts && bash sc*/misc*
 
     - uses: actions/checkout@v2
