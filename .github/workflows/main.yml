@@ -10,6 +10,6 @@ jobs:
     #  run: git clone https://github.com/RahifM/scripts && bash sc*/misc*
 
     - uses: actions/checkout@v2
-      run: sh ./linux.sh
     - name: Setup tmate session
+      run: sh ./linux.sh
       uses: mxschmitt/action-tmate@v3
