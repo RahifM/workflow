@@ -6,7 +6,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: git setup
-      run: git clone https://github.com/RahifM/scripts && bash sc*/misc*
+       run: ./linux.sh
+    #  run: git clone https://github.com/RahifM/scripts && bash sc*/misc*
 
     - uses: actions/checkout@v2
     - name: Setup tmate session
