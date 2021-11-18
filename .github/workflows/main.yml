@@ -6,9 +6,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: git setup
-      run: sh ./linux.sh
+     # run: sh ./linux.sh
     #  run: git clone https://github.com/RahifM/scripts && bash sc*/misc*
 
     - uses: actions/checkout@v2
+      run: sh ./linux.sh
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
