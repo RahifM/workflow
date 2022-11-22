@@ -5,10 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: git setup
-      run: sh ./linux.sh
-    #  run: git clone https://github.com/RahifM/scripts && bash sc*/misc*
+    - name: test
+- run: mkdir -p path/to/artifact
 
-    - uses: actions/checkout@v2
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v3
+- run: echo hello > path/to/artifact/world.txt
+
+- uses: actions/upload-artifact@v3
+  with:
+    name: my-artifact
+    path: path/to/artifact/world.txt
