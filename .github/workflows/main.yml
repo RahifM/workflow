@@ -7,8 +7,9 @@ jobs:
     timeout-minutes: 720
     steps:
     - uses: actions/checkout@v2
-    - name: git setup
-      run: sh ./linux.sh
+    
+    #- name: git setup
+    #  run: sh ./linux.sh
     #  run: git clone https://github.com/RahifM/scripts && bash sc*/misc*
 
     - uses: actions/checkout@v2
