@@ -10,7 +10,7 @@ jobs:
     
     - name: git setup
       run: |
-       apk add --no-cache git
+       apk add --no-cache git bash
        bash ./linux.sh
       #run: git clone https://github.com/RahifM/scripts && bash sc*/misc*
 
