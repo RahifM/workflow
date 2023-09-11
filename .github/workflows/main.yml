@@ -3,13 +3,15 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    #container: alpine:3.15.10
+    container: alpine:3.15.10
     timeout-minutes: 720
     steps:
     - uses: actions/checkout@v2
     
     - name: git setup
-      run: sh ./linux.sh
+      run: |
+       apk add --no-cache git
+       bash ./linux.sh
       #run: git clone https://github.com/RahifM/scripts && bash sc*/misc*
 
     - uses: actions/checkout@v2
