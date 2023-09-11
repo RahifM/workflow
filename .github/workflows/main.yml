@@ -3,8 +3,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: alpine:3.15.10
-    timeout-minutes: 720
+    #container: alpine:3.15.10
     steps:
     - uses: actions/checkout@v2
     
