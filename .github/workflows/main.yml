@@ -3,7 +3,8 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: archliux:base-20240101.0.204074
+    container: 
+      image: archliux:latest
     steps:
     - uses: actions/checkout@v2
     
